@@ -20,3 +20,5 @@ HTML Attribute is basically modifies how an element behaves example (href) this 
 target attribute determines wether this link opens in the current page or a new tab example
 <a href="link" target="_blank"youtube link></a>
 *HTML ignores many spaces in a code
+CSS -----
+px pixels are very common unit of measurement in the digital world,
