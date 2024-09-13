@@ -12,6 +12,15 @@
       border-radius: 3px;
       cursor: pointer;
       margin-right: 8px;
+      transition: opacity 1s;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+    }
+    /*lesson 3  how to add hover, active, transition, shadow*/
+    .subscribe-button:hover{
+      opacity: 0.9;
+    }
+    .subscribe-button:active{
+      opacity: 0.2;
     }
     .join-button{
       background-color: white;
@@ -24,7 +33,16 @@
       width: 60px;
       cursor: pointer;
       margin-right: 8px;
+      transition: background-color 1s, color 1s;
+      box-shadow: 5px 5px 10px rgba(100, 0, 0, 0.3);
     } 
+    .join-button:hover{
+      background-color: rgb(41, 118, 211);
+      color: white;
+    }
+    .join-button:active{
+      opacity: 0.7;
+    }
     .tweet-button{
       background-color: rgb(2, 158, 255);
       color: white;
@@ -35,6 +53,15 @@
       font-weight: bold;
       font-size: 15px;
       cursor: pointer;
+      transition: background-color 1s;
+      box-shadow: 5px 5px 10px rgba(100, 0, 0, 0.3);
+    }
+    .tweet-button:hover{
+      background-color: blue; 
+      color : black;
+    }
+    .tweet-button:active{
+      opacity: 0.7;
     }
     
   </style>
