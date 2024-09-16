@@ -26,3 +26,16 @@ RGB Value is another  way of measuring color.
 R stand for Red G stand for GREEN B stand for Blue
 CSS Space is called MARGIN
 CSS BOX Model is how much space an element takes up and how far it is away from other elements
+display property is more important part for css
+  there three type of elements 
+  1 block element = takes up the entire line/ the paragraph by default is a block element
+  2 inline block element = only takes up as much space as needed
+  3 inline element appear with in aline of text like strong tag
+object-fit determines what happen if this size doesn't match the image
+object-fit have two values contain dhinac walba wuu iska leekaysiinaya hadii aad sawirkaa height siiso sisago isticmalaya space aan muuqan
+second value cover 
+Display we use to switch easily between block and inline block
+lesson 9 we will learn the most important tag of html elements called div
+<div> = division but just is a Box
+also div can contain any other elements   
+
