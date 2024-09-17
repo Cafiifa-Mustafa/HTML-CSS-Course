@@ -36,6 +36,10 @@ object-fit have two values contain dhinac walba wuu iska leekaysiinaya hadii aad
 second value cover 
 Display we use to switch easily between block and inline block
 lesson 9 we will learn the most important tag of html elements called div
-<div> = division but just is a Box
-also div can contain any other elements   
+<div> = division but just is a Box by default is block element
+also div can contain any other elements  
+lesson10: Nested Layout Technique this is going to us to a professional level with html and css
+there are two types of layouts
+1 is vertical layout where items are on the top of each other and then the second one And then the second one is a horizontal
+2 Horizontal layout where items are beside each other
 
