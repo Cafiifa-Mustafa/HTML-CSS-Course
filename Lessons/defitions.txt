@@ -24,7 +24,7 @@ CSS -----
 PX pixels are very common unit of measurement in the digital world,
 RGB Value is another  way of measuring color.
 R stand for Red G stand for GREEN B stand for Blue
-CSS Space is called MARGIN
+CSS Space is called MARGIN 
 CSS BOX Model is how much space an element takes up and how far it is away from other elements
 display property is more important part for css
   there three type of elements 
