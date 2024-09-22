@@ -1,145 +1,90 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .back{
+    margin-right: 8px;
+  }
+  .next{
+    margin-left: 8px;
+  }
+  .stretch{
+background-color: rgb(5, 168, 5);
+color: white;
+margin: 10px;
+padding: 8px;
+border: none;
+font-size: 14px;
+font-weight: bold;
+font-family: arial;
+  }
+  .stretch:hover{
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
 
-  </head>
-  <!--creating green buttons exercise-->
-  <style>
-    .Request{
-      background-color: #000;
-      height: 30px;
-      width: 100px;
-      color: white;
-      margin-right: 15px;
-      cursor: pointer;
-    }
-    .Add{
-      background-color: rgb(255, 216, 20);
-      color: black;
-      border-radius: 15px;
-      border: none;
-      width: 160px;
-      height: 25px;
-      margin-right: 15px;
-      font-size: 14px;
-      cursor: pointer;
+  }
+  .Shadow{
+    background-color: rgb(5, 168, 5);
+    color: white;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+  }
+  .Shadow:hover{
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+  }
+  .group{
+    background-color: rgb(5, 168, 5);
+    color: white;
+    border: none;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+  }
+  .group:hover{
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .group:active{
+    opacity: 0.1;
+  }
 
-    }
-    .Sign-up{
-      background-color: rgb(46, 164, 79);
-      color: white;
-      width: 75px;
-      height: 30px;
-      border: none;
-      border-radius: 3px;
-      font-size: 14px;
-      margin-right: 15px;
-      cursor: pointer;
-    }
-    .Get{
-      background-color: rgb(121, 82, 179);
-      color: white;
-      width: 95px;
-      height: 30px;
-      border: none;
-      border-radius: 3px;
-      font-size: 14px;
-      margin-right: 3px;
-      margin-top: 20px;
-      cursor: pointer;
-    }
-    .Download{
-      background-color: white;
-      color: rgb(108, 117, 125);
-      font-size: 14px;
-      border-color: rgb(108, 117, 125);
-      border-style: solid;
-      border-width: 1px;
-      border-radius: 3px;
-      height: 29px;
-      width: 90px;
-      cursor: pointer;
-      margin-right: 40px;
-    }
-    .Apply{
-      background-color: rgb(10, 102, 194);
-      color: rgb(255, 255, 255);
-      border-radius: 15px;
-      border: none;
-      width: 210px;
-      height: 30px;
-      margin-right: 3px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .Save{
-      background-color: white;
-      color: rgb(10, 102, 194);
-      border-color: rgb(10, 102, 194);
-      border-style: solid;
-      border-width: 1px;
-      border-radius: 18px;
-      height: 30px;
-      width: 70px;
-      font-size: 14px;
-      cursor: pointer;
-      margin-right: 40px;
-    }
-    a{
-      color: rgb(0, 113green, 113);
-      font-size: 14px;
-    }
-    .nike{
-      color: #000;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    p{
-      color: rgb(0, 118, 0);
-      font-size: 16px;
-    }
-    .free{
-      color:#000;
-      font-size: 18px;
-    }
-    .cart{
-      background-color: rgb(255, 216, 20);
-      color: black;
-      border-radius: 15px;
-      border: none;
-      width: 130px;
-      height: 25px;
-      margin-right: 6px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-    .buy{
-      background-color: rgb(255, 164, 28);
-      color: black;
-      border-radius: 15px;
-      border: none;
-      width: 100px;
-      height: 25px;
-      margin-right: 15px;
-      font-size: 14px;
-      cursor: pointer;
-    }
+  
+</style>
+<body>
+  <button class="back">Back</button>
+ <a href="1">1</a>
+ <a href="2">2</a>
+ <a href="3">3</a>
+ <a href="4">4</a>
+ <a href="5">5</a>
 
-  </style>
-  <body>
-    <button class="Request">Request now</button>
-    <button class="Add">Add to Cart</button>
-    <button class="Sign-up">Sign up</button><br>
-    <button class="Get">Get started</button>
-    <button class="Download">Download</button>
-    <button class="Apply">Apply on company website</button>
-    <button class="Save">Save</button><br>
-    <br>
-    <a href="https://www.amazon.com/">Back to Amason</a>
-    <p class="nike">Nike Black Runnoing Shoes</p>
-    <p>$39 - in stock</p>
-    <p class="free">Free Delivery Tomorrow</p>
-    <button class="cart">Add to Cart</button>
-    <button class="buy">Buy now</button><br>
-  </body>
+  <button class="next">Next</button><br>
+  <button class="stretch">Stretch</button><br>
+  <br>
+  <button class="Shadow">Shadow</button><br>
+  <br>
+  <button class="group">One</button>
+  <button class="group">Two</button>
+  <button class="group">Three</button>
+</body>
 </html>
