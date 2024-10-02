@@ -5,7 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid Exercise</title>
 </head>
+
 <body>
-  
+  <div style="display: grid; grid-template-columns: 200px 75px; ">
+  <div class="200px" style="background-color: lightblue; width: 200px;">200px</div>
+  <div class="75px" style="background-color: lightpink; width: 75px;">75px</div>
+</div><br>
+<div style="display: grid; grid-template-columns: 50px 1fr 75px;">
+  <div class="200px" style="background-color: lightblue; width: 200px;">col1</div>
+  <div class="200px" style="background-color: lightpink;">col2</div>
+  <div class="75px" style="background-color: lightblue; width: 75px;">col3</div>
+</div><br>
+<div 
+style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 20px; row-gap: 10px;
+">
+  <div class="200px" style="background-color: lightpink;">col1</div>
+  <div class="200px" style="background-color: lightblue;">col2</div>
+  <div class="200px" style="background-color: lightpink;">col3</div>
+  <div class="200px" style="background-color: lightblue;">col4</div>
+  <div class="200px" style="background-color: lightblue;">col1</div>
+  <div class="200px" style="background-color: lightpink;">col2</div>
+  <div class="200px" style="background-color: lightblue;">col3</div>
+  <div class="200px" style="background-color: lightpink;">col4</div>
+</div>
+
 </body>
 </html>
