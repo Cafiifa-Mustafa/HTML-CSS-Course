@@ -73,5 +73,9 @@ header .button .btn:hover{
   scale: 1.1;
   box-shadow: 0 0 10px blue;
   filter: drop-shadow(0 0 10px white);
+}
 
+/*=======home style=====*/
+.home{
+  
 }
