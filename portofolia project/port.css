@@ -77,5 +77,56 @@ span{
 }
 .Home-content{
   max-width: 800px;
-  
+
+}
+.Home-content h3{
+  font-size: 42px;
+}
+.Home-content h1{
+  font-size: 62px;
+  line-height: 1.2;
+}
+.Home-content p{
+  font-size: 18px;
+  margin: 25px 0 30px;
+}
+.btn-box{
+  width: 345px;
+  display: flex;
+  gap:  2em;
+
+}
+.btn-1{
+  padding: 15px 28px;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-1:hover{
+background-color: white;
+color: black;
+border: 2px solid black;
+}
+
+.btn-2{
+  padding: 15px 28px;
+  background-color: orangered;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-2:hover{
+background-color: white;
+color: orangered;
 }
