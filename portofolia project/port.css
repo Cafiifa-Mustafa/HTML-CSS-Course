@@ -83,15 +83,16 @@ span:hover{
 
 }
 .Home-content h3{
-  font-size: 42px;
+  font-size: 30px;
 }
 .Home-content h1{
-  font-size: 62px;
+  font-size: 40px;
   line-height: 1.2;
 }
 .Home-content p{
-  font-size: 18px;
+  font-size: 16px;
   margin: 25px 0 30px;
+  max-width: 670px;
 }
 .btn-box{
   width: 345px;
@@ -105,7 +106,7 @@ span:hover{
   color: white;
   border: 2px solid transparent;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
@@ -123,7 +124,7 @@ border: 2px solid black;
   color: white;
   border: 2px solid black;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
@@ -136,7 +137,7 @@ color: blueviolet;
 .img-box{
   position: absolute;
   top: 160px;
-  right: 200px;
+  right: 130px;
   width: 300px;
 }
 .img-box img{
