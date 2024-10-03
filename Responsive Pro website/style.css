@@ -77,5 +77,27 @@ header .button .btn:hover{
 
 /*=======home style=====*/
 .home{
-  
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding: 20px;
+}
+
+.home .right{
+  padding-top: 55px;
+  margin-left: 30px;
+}
+
+.home .right h1{
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.home .right h2{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  filter: drop-shadow(0 0 10px white);
 }
