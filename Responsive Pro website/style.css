@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: tahoma;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(moon\ image.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /*box-shadow: 0 0 4px white;*/
+}
+
+header h1{
+  font-size: 33px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #000;
+}
+
+header nav ul {
+  display: flex;
+  margin-left: 500px;
+  gap: 20px;
+}
+
+header nav ul li a{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+header nav ul li a:hover{
+  text-decoration: underline;
+  filter: drop-shadow(0 0 10px blue);
+}
+
+header .button {
+  display: flex;
+  gap: 17px;
+ /* margin-right: 20px;*/
+}
+
+header .button .btn {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(2, 68, 2);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  transition: .4s;
+}
+
+header .button .btn:hover{
+  scale: 1.1;
+  box-shadow: 0 0 10px blue;
+  filter: drop-shadow(0 0 10px white);
+
+}
