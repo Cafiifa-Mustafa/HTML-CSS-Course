@@ -101,3 +101,16 @@ header .button .btn:hover{
   font-weight: bold;
   filter: drop-shadow(0 0 10px white);
 }
+
+.home .right .button .btn{
+  width: 145px;
+  height: 37px;
+  background-color: greenyellow;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 0 10px black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+}
