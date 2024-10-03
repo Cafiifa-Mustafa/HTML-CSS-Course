@@ -66,3 +66,16 @@ span{
   color: white;
   box-shadow: 0 0 25px orangered;
 }
+.Home{
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(241, 241, 241);
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  padding: 30px 12% 0;
+}
+.Home-content{
+  max-width: 800px;
+  
+}
