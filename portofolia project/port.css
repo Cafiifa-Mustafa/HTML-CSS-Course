@@ -27,12 +27,15 @@
 }
 .logo:hover{
 
-  color: orangered;
-  text-shadow: 0 0 25px orangered, 0 0 50px #008055;
+  color: white;
+  text-shadow: 0 0 25px rgba(0,0,0,0.8), 0 0 50px rgba(0,0,0,0.8);
   transform: scale(1.1);
 }
 span{
-  color: orangered;
+  color: rgb(76, 7, 141);
+}
+span:hover{
+  color: white;
 }
 
 .navbar a{
@@ -45,8 +48,8 @@ span{
 }
 .navbar a:hover,
 .navbar a.active{
-  color: orangered;
-  border-bottom: 3px solid orangered;
+  color: blueviolet;
+  border-bottom: 3px solid blueviolet;
 }
 
 .Contact{
@@ -62,9 +65,9 @@ span{
 }
 
 .Contact:hover{
-  background-color: orangered;
+  background-color: blueviolet;
   color: white;
-  box-shadow: 0 0 25px orangered;
+  box-shadow: 0 0 25px blueviolet;
 }
 .Home{
   width: 100%;
@@ -116,7 +119,7 @@ border: 2px solid black;
 
 .btn-2{
   padding: 15px 28px;
-  background-color: orangered;
+  background-color: blueviolet;
   color: white;
   border: 2px solid black;
   border-radius: 8px;
@@ -128,5 +131,15 @@ border: 2px solid black;
 }
 .btn-2:hover{
 background-color: white;
-color: orangered;
+color: blueviolet;
+}
+.img-box{
+  position: absolute;
+  top: 160px;
+  right: 200px;
+  width: 300px;
+}
+.img-box img{
+  border-radius: 50%;
+  width: 100%;
 }
