@@ -24,10 +24,14 @@ header{
 }
 
 header h1{
-  font-size: 33px;
+  font-size: 25px;
   font-weight: bold;
   margin-left: 20px;
   color: #000;
+}
+header h1 span{
+  color: #e2de03;
+  filter: drop-shadow(0 0 10px black);
 }
 
 header nav ul {
@@ -84,8 +88,8 @@ header .button .btn:hover{
 }
 
 .home .right{
-  padding-top: 55px;
-  margin-left: 30px;
+  padding-top: 90px;
+  margin-left: 60px;
 }
 
 .home .right h1{
@@ -104,8 +108,8 @@ header .button .btn:hover{
 
 .home .right .button .btn{
   width: 145px;
-  height: 37px;
-  background-color: greenyellow;
+  height: 40px;
+  background-color: rgb(84, 124, 29);
   font-size: 22px;
   font-weight: bold;
   box-shadow: 0 0 10px black;
