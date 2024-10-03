@@ -118,3 +118,38 @@ header .button .btn:hover{
   border-radius: 20px;
   color: #fff;
 }
+
+.home .left{
+  padding-top: 100px;
+  padding-right: 90px;
+}
+
+form{
+  width: 260px;
+  height: 340px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+}
+
+form h2{
+  color: #fff;
+  filter: drop-shadow(0 0 10px black);
+  font-size: 27px;
+  font-weight: bold;
+}
+
+form .sanjay{
+  width: 90%;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 6px  black;
+  border-radius: 10px;
+  color: black;
+}
