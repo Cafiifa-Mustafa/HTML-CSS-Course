@@ -65,3 +65,14 @@ header nav ul a:hover{
   color:rgb(58, 161, 252);
   border-bottom: 2px solid rgb(58, 161, 252);
 }
+
+img{
+  margin-top: 150px;
+  margin-left: 200px;
+  display: flex;
+  border-radius: 50%;
+  border: 10px solid rgb(26, 26, 26);
+  box-shadow: 0 0 10px white;
+  width: 270px;
+  height: 270px;
+}
