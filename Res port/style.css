@@ -41,13 +41,12 @@ header h1{
   padding-bottom: 7px;
   padding-left: 7px;
   font-weight: 200px;
-
 }
+
 header h2{
   color: white;
   font-size: 20px;
   text-decoration: right;
-
 }
 
 header nav ul {
@@ -55,15 +54,14 @@ display: flex;
 margin-right: 100px;
 margin-left: 505px;
 gap: 20px;
-
-
 }
+
 header nav ul a{
   font-size: 16px;
   color: #ddd;
 }
+
 header nav ul a:hover{
   color:rgb(58, 161, 252);
   border-bottom: 2px solid rgb(58, 161, 252);
-
 }
