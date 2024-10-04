@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: tahoma;
 }
 
 body{
@@ -52,9 +53,10 @@ header h2{
 header nav ul {
 display: flex;
 margin-right: 100px;
-margin-left: 490px;
+margin-left: 590px;
 gap: 20px;
 }
+
 
 header nav ul a{
   font-size: 16px;
@@ -64,15 +66,97 @@ header nav ul a{
 header nav ul a:hover{
   color:rgb(58, 161, 252);
   border-bottom: 2px solid rgb(58, 161, 252);
+  box-shadow: 0 0 10px rgb(58, 161, 252),
+              0 0 10px rgb(58, 161, 252);
+  transition: 0.3s ease;
+transform: scale(1.1) translatey(-10px);
+}
+.one {
+  margin-top: 200px;
+  margin-left: 250px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
 }
 
 img{
-  margin-top: 150px;
-  margin-left: 200px;
-  display: flex;
+  position: relative;
   border-radius: 50%;
   border: 10px solid rgb(26, 26, 26);
   box-shadow: 0 0 10px white;
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
+}
+.two {
+  margin-left: 20px;
+  margin-right: 150px;
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  padding: 50px;
+  vertical-align: top;
+  margin-top: 150px;
+}
+
+div h3{
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+div h3 span{
+  color: rgb(58, 161, 252);
+}
+div h1{
+  color: rgb(58, 161, 252);
+  font-size: 20px;
+  line-height: 50px;
+}
+div p{
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  width: 500px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+.btn-1{
+  width: 130px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid rgb(58, 161, 252);
+  border-radius: 50px;
+  color: #ddd;
+  margin-right: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(58, 161, 252);
+}
+.btn-1:hover{
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  background-color:  rgb(58, 161, 252);
+  transition: .5s ease;
+  transform: scale(1.1) translatey(-5px);
+}
+.btn-2{
+  width: 130px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgb(58, 161, 252);
+  border: 2px solid white;
+  border-radius: 50px;
+  color: #ddd;
+  
+}
+
+.btn-2:hover{
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  background-color:  rgb(58, 161, 252);
+  transition: .5s ease;
+  transform: scale(1.1) translatey(-5px);
 }
