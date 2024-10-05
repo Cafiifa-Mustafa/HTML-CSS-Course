@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: tahoma;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./moon2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 4px white;
+  z-index: 100;
+}
+
+header h1{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+}
+header h1 span{
+  color: green;
+  filter: drop-shadow(0 0 10px black);
+}
+
+div h2 span{
+  color: green;
+  filter: drop-shadow(0 0 10px black);
+}
+
+header nav ul {
+  display: flex;
+  margin-left: 450px;
+  gap: 20px;
+}
+
+header nav ul li a{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+header nav ul li a:hover{
+  text-decoration: underline;
+  filter: drop-shadow(0 0 10px blue);
+}
+
+header .button {
+  display: flex;
+  gap: 20px;
+ /* margin-right: 20px;*/
+}
+
+header .button .btn {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  transition: .4s;
+}
+
+header .button .btn:hover{
+  scale: 1.1;
+  box-shadow: 0 0 10px blue;
+  filter: drop-shadow(0 0 10px white);
+}
+
+/*=======home style=====*/
+.home{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding: 20px;
+}
+nav li a .active:active {
+  color: green;
+  border-bottom: 3px solid green;
+}
+
+.home .right{
+  padding-top: 90px;
+  margin-left: 60px;
+}
+
+.home .right h1{
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.home .right h2{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.home .right .button .btn{
+  width: 145px;
+  height: 40px;
+  background-color: green;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 0 10px black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.home .left{
+  padding-top: 170px;
+  padding-right: 90px;
+}
+
+form{
+  width: 260px;
+  height: 300px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+}
+
+form h2{
+  color: #fff;
+  filter: drop-shadow(0 0 10px black);
+  font-size: 27px;
+  font-weight: bold;
+}
+
+form .sanjay{
+  width: 90%;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 6px  black;
+  border-radius: 10px;
+  color: black;
+  margin-bottom: 18px;
+}
+
+form .checkbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .checkbox .check{
+ color: white;
+ font-size: 20px;
+ margin-left: 14px;
+}
+
+form .checkbox h3{
+ color: greenyellow;
+ font-size: 16px;
+ margin-right: 23px;
+}
+
+form .checkbox a{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form .button .btn{
+  width: 140px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: #fff;
+  box-shadow: 0 0 10px white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+form .button .btn:hover{
+  color: #000;
+  background-color: greenyellow;
+  scale: 1.1;
+
+}
+/*
+.sec{
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+}
+.section{
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+}
