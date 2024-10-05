@@ -19,6 +19,7 @@ header{
   margin-top: 8px;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px orangered;
 }
 header h1{
@@ -52,4 +53,13 @@ header h1{
 .navbar ul li a:hover{
   color: white;
   border-bottom: 2px solid white;
+}
+.images-food{
+  width: 600px;
+  display: inline-block;
+}
+.advertises .images-macmacaan .one{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
 }
