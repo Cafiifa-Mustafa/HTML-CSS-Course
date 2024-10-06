@@ -96,7 +96,6 @@ button:hover{
 }
 @media(min-aspect-ratio: 16/9){
   .banner video{
-    height: auto;
   }
 }
 

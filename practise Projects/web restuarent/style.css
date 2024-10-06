@@ -20,7 +20,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 10px orangered;
+  box-shadow: 0 0 15px orangered;
 }
 header h1{
   margin-left: 20px;
@@ -54,12 +54,167 @@ header h1{
   color: white;
   border-bottom: 2px solid white;
 }
-.images-food{
-  width: 600px;
+.Home-page{
+  width: 400px;
   display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  color: white;
 }
-.advertises .images-macmacaan .one{
-  width: 200px;
-  height: 200px;
+.Home-page h2{
+  font-size: 20px;
+  margin-left: 30px;
+  line-height: 25px;
+}
+
+.Home-page p{
+  font-size: 16px;
+  margin-left: 20px;
+}
+.advertises{
+  margin-top: 20px;
+}
+.images-food{
   display: inline-block;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.images-food .one{
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+.images-food .one:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+.images-food .two{
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-food .two:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-food .three{
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-food .three:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-food .four{
+  width: 200px;
+  height: 132px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-food .four:hover{
+  width: 200px;
+  height: 140px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-food .five{
+  width: 200px;
+  height: 132px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-food .five:hover{
+  width: 200px;
+  height: 140px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-macmacaan{
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.images-macmacaan .one{
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-macmacaan .one:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-macmacaan .two{
+  width: 200px;
+  height: 132px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-macmacaan .two:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-macmacaan .three{
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-macmacaan .three:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-macmacaan .four{
+  width: 200px;
+  height: 132px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-macmacaan .four:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
+}
+
+.images-macmacaan .five{
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+}
+
+.images-macmacaan .five:hover{
+  width: 220px;
+  box-shadow: 0 0 20px orangered;
 }
