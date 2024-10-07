@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: tahoma;
+}
+.video{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0, 0, 0, 0.40));
+  background-position: center;
+  background-size: center;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px white;
+}
+.logo{
+  width: 120px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.navbar ul li a:hover{
+  background: white;
+  color: black;
+  transition: 0.5s ease;
+  transform: scale(1.1) translatey(10px);
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content h1{
+  margin-top: 80px;
+  font-size: 70px;
+  font-weight: 800;
+}
+
+button{
+  width: 200px;
+  height: 60px;
+  padding: 15px;
+  margin: 20px 5px;
+  text-align: center;
+  border-radius: 50px;
+  color: black;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+button:hover{
+  background: rgb(0, 155, 226);
+  transition: 0.5s;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 0 10px blue;
+}
+.video video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  @media(min-aspect-ratio: 16/9){
+    .video video{
+      width: 100%;
+      height: auto;
+    }
+  }

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-tr>ansform .3s;transition:transform .3s,opacity .;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><meta http-equiv="origin-trial" content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">;>;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality</title>
+    <meta name="description" content="Discover luxury and warm hospitality at Damal Hotel Hargeisa. Experience our four-star accommodations, complimentary breakfast, seamless airport shuttle service, and vibrant cultural explorations in Hargeisa and Berbera. Your perfect stay awaits.">
+    <meta name="keywords" content="index, home, damal, hargeisa, somalia, africa hotels">
+    <meta name="author" content="Damal Hotel">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Damal Hotel">
+            <meta property="og:image" content="https://damalhotel.com/uploads/logo/logo_65005f1dc22301-04994794-47101723.png">
+        <meta property="og:image:width" content="240">
+        <meta property="og:image:height" content="90">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality">
+        <meta property="og:description" content="Discover luxury and warm hospitality at Damal Hotel Hargeisa. Experience our four-star accommodations, complimentary breakfast, seamless airport shuttle service, and vibrant cultural explorations in Hargeisa and Berbera. Your perfect stay awaits.">
+        <meta property="og:url" content="https://damalhotel.com/">
+        <meta property="fb:app_id" content="">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@Damal Hotel">
+        <meta name="twitter:title" content="Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality">
+        <meta name="twitter:description" content="Discover luxury and warm hospitality at Damal Hotel Hargeisa. Experience our four-star accommodations, complimentary breakfast, seamless airport shuttle service, and vibrant cultural explorations in Hargeisa and Berbera. Your perfect stay awaits.">
+        <link rel="shortcut icon" type="image/png" href="https://damalhotel.com/assets/img/favicon.png">
+    <link rel="canonical" href="https://damalhotel.com/">
+    <link rel="alternate" href="https://damalhotel.com/" hreflang="en-US">
+    <style>@font-face {font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/inter/inter-400.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/inter/inter-400.woff') format('woff')}  @font-face {font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/inter/inter-600.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/inter/inter-600.woff') format('woff')}  @font-face {font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/inter/inter-700.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/inter/inter-700.woff') format('woff')}</style>
+<style>@font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-400.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-400.woff') format('woff')}  @font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-600.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-600.woff') format('woff')}  @font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-700.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-700.woff') format('woff')}</style>
+<style>@font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-400.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-400.woff') format('woff')}  @font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-600.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-600.woff') format('woff')}  @font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-display: swap; src: local(''), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-700.woff2') format('woff2'), url('https://damalhotel.com/assets/fonts/open-sans/open-sans-700.woff') format('woff')}</style>
+            <link href="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link href="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/style.css" rel="stylesheet">
+    <link href="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/vendors.css" rel="stylesheet">
+    <link href="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/custom-style.css" rel="stylesheet">
+
+        <style>:root {--vr-font-primary:  "Open Sans", Helvetica, sans-serif;--vr-font-secondary:  "Inter", sans-serif;;--vr-font-tertiary:  "Open Sans", Helvetica, sans-serif;--vr-theme-color: #0f88f1;--vr-block-color: #101010;--vr-mega-menu-color: #1e1e1e;}
+</style>
+<style>.nav-link{transition:none!important}#nav-top{background-color:#fff!important}#header{background-color:var(--vr-block-color)!important}.mega-menu .menu-left{background-color:var(--vr-mega-menu-color)}.nav-mobile{background-color:var(--vr-mega-menu-color)}.nav-mobile .nav-item .nav-link{color:#fff}.nav-mobile .profile-dropdown-mobile .menu-sub-items .dropdown-item{color:#fff}.nav-mobile .profile-dropdown-mobile{border-bottom:1px solid var(--vr-block-color)}.nav-mobile .btn-default{background-color:var(--vr-theme-color)!important;border-color:var(--vr-theme-color)!important;color:#fff!important}#nav-top .navbar-nav .nav-item .nav-link{color:#222!important;font-weight:600;font-size:13px;padding:6px 0}#nav-top .navbar-nav .nav-item svg{color:#222}#nav-top .navbar-nav .nav-item .nav-link:hover,#nav-top .navbar-nav .nav-item .nav-link:active,#nav-top .navbar-nav .nav-item .nav-link:focus{color:#444!important}.profile-dropdown > a img{border:1px solid #d5d5d5}.profile-dropdown .dropdown-menu{top:0!important}.nav-main .navbar-nav .nav-link{padding:10px 14px;font-size:12px;color:#fff}.nav-main .navbar-right .nav-link{color:#fff!important}.nav-main .navbar-brand .logo{height:44px}.nav-main .search-icon svg{width:20px;height:20px}.nav-main{border-bottom:0}.news .mega-menu{border-top:0;top:0}.mega-menu .menu-left{background-image:linear-gradient(rgba(0,0,0,0.09) 0 0)}.mega-menu .menu-left a{color:#fff;transition:none!important}.badge-category{text-transform:uppercase;font-size:11px}.section-featured .col-featured-left{width:50%!important;padding-right:20px!important}.section-featured .col-featured-right{width:25%!important;padding-left:0!important;padding-right:20px!important}.section-featured .col-featured-right .col-first .item{margin-bottom:20px}.top-headlines{display:block;position:relative;width:25%!important;padding-left:0!important}.top-headlines .top-headlines-title{margin-bottom:15px;font-size:30px;font-weight:700;letter-spacing:-1px;line-height:1}.top-headlines .items{width:100%;height:482px;display:flex;flex-flow:column wrap;overflow:hidden}.top-headlines .item{display:block;width:100%;position:relative;padding-top:12px;margin-top:12px;border-top:1px solid #ececec}.top-headlines .item-first{border:0!important;padding-top:0;margin-top:0}.top-headlines .item .title{margin-top:0;margin-bottom:3px;font-size:14px;line-height:19px;font-weight:600!important}.top-headlines .item .category{margin-right:5px;font-size:11px;line-height:1;font-weight:600;text-transform:uppercase;letter-spacing:-.4px}.top-headlines .item .date{font-size:11px;font-weight:600;line-height:1;color:#555;letter-spacing:-.4px}.header-mobile svg{color:#fff!important;stroke:#fff!important}.header-mobile-container{border-bottom:0}.top-headlines .item .category{color:var(--vr-theme-color)!important}.header-mobile,.mobile-search-form{background-color:var(--vr-block-color)!important}@media (min-width: 767.98px){.section-featured .col-featured-right .item{height:253px}}@media (max-width: 1399.98px){.section-featured .col-featured-right .item{height:217px}}@media (max-width: 1199.98px){.nav-main .navbar-nav .nav-link{padding:10px 8px}.top-headlines .items{height:410px}}@media (max-width: 991.98px){.news #header{background-color:transparent!important}.section-featured .col-featured-left{width:100%!important;padding-right:0!important}.section-featured .col-featured-right{width:100%!important;padding:0!important}.section-featured .col-featured-right .row{--bs-gutter-x:.25rem}.section-featured .col-featured-right .col-12{width:50%!important}.top-headlines{width:100%!important;padding:0 15px!important;margin-top:10px;margin-bottom:10px}.top-headlines .items{height:auto}}@media (max-width: 575.98px){.section-featured .col-featured-right .item .post-meta{display:none}.col-featured-right .item .caption .title{font-size:14px;line-height:18px}.section-featured .col-featured-right .item{height:210px}}@media (max-width: 427.98px){.section-featured .col-featured-right .item{height:185px}}
+</style><script type="text/javascript" async="" charset="utf-8" src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-LsgFz6D3IXKi1Rzqj4uhSQDNZOj1dcZCWxIrJG5IYGWvpJ304xZdrK8AxV/LlQPB"></script><script>var VrConfig = {baseURL: 'https://damalhotel.com', csrfTokenName: 'app_csrf_token', csrfCookieName: 'vrapp_csrf_cookie', sysLangId: '1', rtl: false, isRecaptchaEnabled: '1', categorySliderIds: [], textOk: "OK", textCancel: "Cancel", textCorrectAnswer: "Correct Answer", textWrongAnswer: "Wrong Answer"};</script>    
+
+
+    <style>.form-control,.form-input,.nice-select{border:2px solid #906b2e!important;padding:8px 12px;border-radius:4px;color:#333;font-size:16px}.btn_1.outline{border:2px solid #906b2e;color:#906b2e;background-color:transparent;padding:8px 20px;border-radius:4px;font-weight:700;transition:background-color 0.3s,color 0.3s}.btn_1.outline:hover{background-color:#906b2e;color:#fff}.form-control:focus,.form-input:focus,nice-select:focus{border-color:#906b2e;box-shadow:0 0 0 .2rem rgba(144,107,46,.25)}</style>
+<style class="fslightbox-styles">.fslightbox-absoluted{position:absolute;top:0;left:0}.fslightbox-fade-in{animation:fslightbox-fade-in .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out{animation:fslightbox-fade-out .3s ease}.fslightbox-fade-in-strong{animation:fslightbox-fade-in-strong .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out-strong{animation:fslightbox-fade-out-strong .3s ease}@keyframes fslightbox-fade-in{from{opacity:.65}to{opacity:1}}@keyframes fslightbox-fade-out{from{opacity:.35}to{opacity:0}}@keyframes fslightbox-fade-in-strong{from{opacity:.3}to{opacity:1}}@keyframes fslightbox-fade-out-strong{from{opacity:1}to{opacity:0}}.fslightbox-cursor-grabbing{cursor:grabbing}.fslightbox-full-dimension{width:100%;height:100%}.fslightbox-open{overflow:hidden;height:100%}.fslightbox-flex-centered{display:flex;justify-content:center;align-items:center}.fslightbox-opacity-0{opacity:0!important}.fslightbox-opacity-1{opacity:1!important}.fslightbox-scrollbarfix{padding-right:17px}.fslightbox-transform-transition{transition:transform .3s}.fslightbox-container{font-family:Arial,sans-serif;position:fixed;top:0;left:0;background:linear-gradient(rgba(30,30,30,.9),#000 1810%);touch-action:pinch-zoom;z-index:1000000000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}.fslightbox-container *{box-sizing:border-box}.fslightbox-svg-path{transition:fill .15s ease;fill:#ddd}.fslightbox-nav{height:45px;width:100%;position:absolute;top:0;left:0}.fslightbox-slide-number-container{display:flex;justify-content:center;align-items:center;position:relative;height:100%;font-size:15px;color:#d7d7d7;z-index:0;max-width:55px;text-align:left}.fslightbox-slide-number-container .fslightbox-flex-centered{height:100%}.fslightbox-slash{display:block;margin:0 5px;width:1px;height:12px;transform:rotate(15deg);background:#fff}.fslightbox-toolbar{position:absolute;z-index:3;right:0;top:0;height:100%;display:flex;background:rgba(35,35,35,.65)}.fslightbox-toolbar-button{height:100%;width:45px;cursor:pointer}.fslightbox-toolbar-button:hover .fslightbox-svg-path{fill:#fff}.fslightbox-slide-btn-container{display:flex;align-items:center;padding:12px 12px 12px 6px;position:absolute;top:50%;cursor:pointer;z-index:3;transform:translateY(-50%)}@media (min-width:476px){.fslightbox-slide-btn-container{padding:22px 22px 22px 6px}}@media (min-width:768px){.fslightbox-slide-btn-container{padding:30px 30px 30px 6px}}.fslightbox-slide-btn-container:hover .fslightbox-svg-path{fill:#f1f1f1}.fslightbox-slide-btn{padding:9px;font-size:26px;background:rgba(35,35,35,.65)}@media (min-width:768px){.fslightbox-slide-btn{padding:10px}}@media (min-width:1600px){.fslightbox-slide-btn{padding:11px}}.fslightbox-slide-btn-container-previous{left:0}@media (max-width:475.99px){.fslightbox-slide-btn-container-previous{padding-left:3px}}.fslightbox-slide-btn-container-next{right:0;padding-left:12px;padding-right:3px}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-left:22px}}@media (min-width:768px){.fslightbox-slide-btn-container-next{padding-left:30px}}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-right:6px}}.fslightbox-down-event-detector{position:absolute;z-index:1}.fslightbox-slide-swiping-hoverer{z-index:4}.fslightbox-invalid-file-wrapper{font-size:22px;color:#eaebeb;margin:auto}.fslightbox-video{object-fit:cover}.fslightbox-youtube-iframe{border:0}.fslightbox-loader{display:block;margin:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:67px;height:67px}.fslightbox-loader div{box-sizing:border-box;display:block;position:absolute;width:54px;height:54px;margin:6px;border:5px solid;border-color:#999 transparent transparent transparent;border-radius:50%;animation:fslightbox-loader 1.2s cubic-bezier(.5,0,.5,1) infinite}.fslightbox-loader div:nth-child(1){animation-delay:-.45s}.fslightbox-loader div:nth-child(2){animation-delay:-.3s}.fslightbox-loader div:nth-child(3){animation-delay:-.15s}@keyframes fslightbox-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.fslightbox-source{position:relative;z-index:2;opacity:0}</style><style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
+
+<body class="news datepicker_mobile_full" style="">
+    <!-- <div class="cursor js-cursor"></div>
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div> -->
+    <header class="reveal_header animated headroom--not-bottom slideDown headroom--top">
+        <div class="container reveal_header_inner">
+            <div class="row reveal_body align-items-center" style="display:flex; padding-top:15px">
+                <div class="col-6 logo">
+                    <a href="https://damalhotel.com/" class="logo_normal"><img src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/logo_65005f1dc22301-04994794-47101723.png" width="160" height="80" alt=""></a>
+                    <a href="https://damalhotel.com/" class="logo_sticky"><img src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/logo_65005f2e655af9-34576644-73554872.png" width="160" height="80" alt=""></a>
+                </div>
+                <div class="col-6">
+                    <nav>
+                        <ul>
+                            <li><a href="https://damalhotel.com/#booking_section" class="btn_1 btn_scrollto">Book Now</a></li>
+                            <li>
+                                <div class="hamburger_2 open_close_nav_panel">
+                                    <div class="hamburger__box">
+                                        <div class="hamburger__inner"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div><!-- /container -->
+    </header><!-- /Header -->
+    <div class="nav_panel">
+    <a href="https://damalhotel.com/#" class="closebt open_close_nav_panel"><i class="bi bi-x"></i></a>
+    <div class="logo_panel"><img src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/logo_65005f2e655af9-34576644-73554872.png" width="160" height="80" alt=""></div>
+    <div class="sidebar-navigation">
+        <nav>
+            <ul class="level-1">
+                                    <li>
+                        <a class="" href="https://damalhotel.com/">Home</a>
+                    </li>
+                                                            <li class=""><a href="https://damalhotel.com/about">About</a></li>
+                                                        <li class=""><a href="https://damalrestaurant.com/">Damal Restaurant</a></li>
+                                                        <li data-category-id="3"><a href="https://damalhotel.com/rooms-and-suites">Rooms &amp; Suites</a></li>
+                                                                                <li class=""><a href="https://damalhotel.com/contact">Contact</a></li>
+                                                        <li class=""><a href="https://damalhotel.com/gallery">Gallery</a></li>
+                                                        <li data-category-id="8"><a href="https://damalhotel.com/posts">Blog</a></li>
+                                        
+            </ul>
+            <div class="panel_footer">
+                <div class="phone_element"><a href="tel://+252 65 339 9000"><i class="bi bi-telephone"></i><span><em>Info and bookings</em>+252 65 339 9000</span></a></div>
+            </div>
+        </nav>
+    </div>
+</div>
+    <main><div id="carousel-home">
+    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+        <!-- Static Slide 1 -->
+        
+        <!-- Static Slide 2 -->
+        
+        <!-- More slides as you need... -->
+    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2698px, 0px, 0px); transition: all; width: 8094px;"><div class="owl-item cloned" style="width: 1349px;"><div class="owl-slide background-image" data-background="url(&#39;assets/img/damal-1.jpg&#39;)" style="background-image: url(&quot;assets/img/damal-1.jpg&quot;);">
+            <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0,0,0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-lg-6 static">
+                            <div class="slide-text white">
+                                <small class="owl-slide-animated owl-slide-title">Embrace Somaliland Hospitality</small>
+                                <h2 class="owl-slide-animated owl-slide-title-2">Experience Luxurious Comfort at Damal Hotel</h2>
+                                <div class="owl-slide-animated owl-slide-title-3">
+                                    <a class="btn_1 outline white mt-3" href="https://damalhotel.com/about">Discover More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div><div class="owl-item cloned" style="width: 1349px;"><div class="owl-slide background-image" data-background="url(&#39;assets/img/damal-4.jpg&#39;)" style="background-image: url(&quot;assets/img/damal-4.jpg&quot;);">
+            <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-lg-6 static">
+                            <div class="slide-text white">
+                                <small class="owl-slide-animated owl-slide-title">Dining at Damal</small>
+                                <h2 class="owl-slide-animated owl-slide-title-2">Savour Exquisite Culinary Delights</h2>
+                                <div class="owl-slide-animated owl-slide-title-3">
+                                    <a class="btn_1 outline white mt-3" href="https://damalhotel.com/damal-restaurant">Explore Our Menu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div><div class="owl-item active" style="width: 1349px;"><div class="owl-slide background-image" data-background="url(&#39;assets/img/damal-1.jpg&#39;)" style="background-image: url(&quot;assets/img/damal-1.jpg&quot;);">
+            <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0,0,0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-lg-6 static">
+                            <div class="slide-text white">
+                                <small class="owl-slide-animated owl-slide-title is-transitioned">Embrace Somaliland Hospitality</small>
+                                <h2 class="owl-slide-animated owl-slide-title-2 is-transitioned">Experience Luxurious Comfort at Damal Hotel</h2>
+                                <div class="owl-slide-animated owl-slide-title-3 is-transitioned">
+                                    <a class="btn_1 outline white mt-3" href="https://damalhotel.com/about">Discover More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div><div class="owl-item" style="width: 1349px;"><div class="owl-slide background-image" data-background="url(&#39;assets/img/damal-4.jpg&#39;)" style="background-image: url(&quot;assets/img/damal-4.jpg&quot;);">
+            <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-lg-6 static">
+                            <div class="slide-text white">
+                                <small class="owl-slide-animated owl-slide-title">Dining at Damal</small>
+                                <h2 class="owl-slide-animated owl-slide-title-2">Savour Exquisite Culinary Delights</h2>
+                                <div class="owl-slide-animated owl-slide-title-3">
+                                    <a class="btn_1 outline white mt-3" href="https://damalhotel.com/damal-restaurant">Explore Our Menu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div><div class="owl-item cloned" style="width: 1349px;"><div class="owl-slide background-image" data-background="url(&#39;assets/img/damal-1.jpg&#39;)" style="background-image: url(&quot;assets/img/damal-1.jpg&quot;);">
+            <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0,0,0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-lg-6 static">
+                            <div class="slide-text white">
+                                <small class="owl-slide-animated owl-slide-title">Embrace Somaliland Hospitality</small>
+                                <h2 class="owl-slide-animated owl-slide-title-2">Experience Luxurious Comfort at Damal Hotel</h2>
+                                <div class="owl-slide-animated owl-slide-title-3">
+                                    <a class="btn_1 outline white mt-3" href="https://damalhotel.com/about">Discover More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div><div class="owl-item cloned" style="width: 1349px;"><div class="owl-slide background-image" data-background="url(&#39;assets/img/damal-4.jpg&#39;)" style="background-image: url(&quot;assets/img/damal-4.jpg&quot;);">
+            <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-lg-6 static">
+                            <div class="slide-text white">
+                                <small class="owl-slide-animated owl-slide-title">Dining at Damal</small>
+                                <h2 class="owl-slide-animated owl-slide-title-2">Savour Exquisite Culinary Delights</h2>
+                                <div class="owl-slide-animated owl-slide-title-3">
+                                    <a class="btn_1 outline white mt-3" href="https://damalhotel.com/damal-restaurant">Explore Our Menu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+    <div class="mouse_wp">
+        <a href="https://damalhotel.com/#first_section" class="btn_scrollto">
+            <div class="mouse"></div>
+        </a>
+    </div>
+    <!-- / mouse -->
+</div>
+
+
+                   <section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="title text-center mb-5">
+                    <small>Luxury experience</small>
+                    <h3>Rooms and Suites</h3>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="row justify-content-center add_bottom_90">
+                                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                                    <a href="https://damalhotel.com/deluxe-room" class="box_cat_rooms">
+                                        <figure>
+                                            
+                                                <div data-cue="slideInUp" data-jarallax-element="-30" class="background-image rounded-img" data-background="url(https://damalhotel.com/uploads/images/202307/image_870x_64c2210fe7ba6.jpg)" style="background-image: url(&quot;https://damalhotel.com/uploads/images/202307/image_870x_64c2210fe7ba6.jpg&quot;); animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both; transform: translate3d(0px, 72.3424px, 0px);" data-jarallax-original-styles="background-image: url(&quot;https://damalhotel.com/uploads/images/202307/image_870x_64c2210fe7ba6.jpg&quot;);" data-show="true"><div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);"><div style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; position: fixed;"></div></div></div>
+
+                                                                                        <div class="info">
+                                                <small></small>
+                                                <h3>Deluxe Room</h3>
+                                                <span>Read more</span>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                </div>
+                                                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                                    <a href="https://damalhotel.com/super-deluxe-room" class="box_cat_rooms">
+                                        <figure>
+                                            
+                                                <div data-cue="slideInUp" data-jarallax-element="-30" class="background-image rounded-img" data-background="url(https://damalhotel.com/uploads/images/202307/image_870x_64c2213c921ac.jpg)" style="background-image: url(&quot;https://damalhotel.com/uploads/images/202307/image_870x_64c2213c921ac.jpg&quot;); animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both; transform: translate3d(0px, 72.4292px, 0px);" data-jarallax-original-styles="background-image: url(&quot;https://damalhotel.com/uploads/images/202307/image_870x_64c2213c921ac.jpg&quot;);" data-show="true"><div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);"><div style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; position: fixed;"></div></div></div>
+
+                                                                                        <div class="info">
+                                                <small></small>
+                                                <h3>Super Deluxe</h3>
+                                                <span>Read more</span>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                </div>
+                                                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                                    <a href="https://damalhotel.com/vip-room" class="box_cat_rooms">
+                                        <figure>
+                                            
+                                                <div data-cue="slideInUp" data-jarallax-element="-30" class="background-image rounded-img" data-background="url(https://damalhotel.com/uploads/images/202307/image_870x_64c22172d9dd3.jpg)" style="background-image: url(&quot;https://damalhotel.com/uploads/images/202307/image_870x_64c22172d9dd3.jpg&quot;); animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 360ms; animation-direction: normal; animation-fill-mode: both; transform: translate3d(0px, 72.3424px, 0px);" data-jarallax-original-styles="background-image: url(&quot;https://damalhotel.com/uploads/images/202307/image_870x_64c22172d9dd3.jpg&quot;);" data-show="true"><div id="jarallax-container-2" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);"><div style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; position: fixed;"></div></div></div>
+
+                                                                                        <div class="info">
+                                                <small></small>
+                                                <h3>VIP Room</h3>
+                                                <span>Read more</span>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                </div>
+                                        <p class="text-end pr-3 ml-auto mr-3"><a href="https://damalhotel.com/rooms-and-suites" class="btn_1 outline mt-2">View all Rooms</a></p>
+                </div>
+                <!-- /row-->
+                <div class="title text-center mb-5">
+                    <small data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">Damal Hotel</small>
+                    <h3 data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">Main Facilities and Services</h3>
+                </div>
+                <div class="col-lg-7 d-flex mx-auto justify-content-center">
+                    <p class="p-paragraph text-center">Discover the essence of comfort and convenience with Damal Hotel's main facilities. High-speed Wi-Fi, seamless airport transfers, on-premise dining, and professional laundry services come together to create an unforgettable stay for you.</p>
+                </div>
+
+                <div class="row card-list-o mt-4">
+                    <div class="col-xl-3 col-md-6 list--cards-3">
+                        <div class="box_facilities no-border  " data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                            <i class="icon-hotel-airplane pt-3"></i>
+                            <h3>Airport Pickup and Drop</h3>
+                            <p>Begin and end your journey with ease; our airport service ensures your transit is as relaxing as your stay.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 list--cards-3">
+                        <div class="box_facilities" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;">
+                            <i class="bi-hospital pt-3" style="font: weight 300px; !important"></i>
+                            <h3>Doctor on call 24/7</h3>
+                            <p>First time in Hargeisa, Damal Hotel introducing Doctor on call paid service for the guest. We always give priority for Guest needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 list--cards-3">
+                        <div class="box_facilities" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 360ms; animation-direction: normal; animation-fill-mode: both;">
+                            <i class="customicon-cocktail pt-3"></i>
+                            <h3>Damal Restaurant</h3>
+                            <p>Venture just steps outside the hotel to our on-premise restaurant, turning every meal into a delightful experience amidst pleasant surroundings.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 list--cards-3">
+                        <div class="box_facilities" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 540ms; animation-direction: normal; animation-fill-mode: both;">
+                            <i class="icon-hotel-loundry pt-3"></i>
+                            <h3>Laundry and Dry Cleaning Services</h3>
+                            <p>Maintain a fresh and polished look throughout your stay with our professional laundry services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <div class="title mt-5">
+                            <small data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">Available Payment Options (Only on arrival):</small>
+                        </div>
+                        <ul data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                            <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Cash on Arrival.</li>
+                            <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>eDahab Mobile Money Transfer.</li>
+                            <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Zaad.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="box_facilities_btn">
+                    <a href="https://damalhotel.com/#booking_section" class="btn_1 btn_scrollto">Book Now</a>
+                </div>
+                <!-- /Row -->
+
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+    </div>
+    <!-- end container -->
+</section><style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        color: #906b2e !important;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1rem !important;
+    }
+
+    li i {
+        padding: 0 10px;
+        font-size: 2rem;
+        line-height: -1rem !important;
+    }
+
+    #local-m .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+</style>
+<div id="local-m">
+    <div class="bg_white">
+        <div class="row">
+            <div class="col-lg-6 order-first order-lg-0" style="padding:0 !important">
+                <div class="pinned-image pinned-image--medium">
+                    <div class="pinned-image__container" style="translate: none; rotate: none; scale: none; transform: scale(1.05, 1.05);">
+                        <img src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/damal-resto.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-lg-4 d-flex flex-column justify-content-center px-sm-2 py-sm-2">
+                <div class="title mx-sm-3 my-sm-3 mb-sm-3 pb-sm-4" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                    <small>Local Amenities</small>
+                    <h3>Damal Restaurant</h3>                  
+                    <ul data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_1"></i>Our lavish buffet, perfect for family outings.</li>
+                        <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_1"></i>Opt for the unique Azuma package.</li>
+                        <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_1"></i>Take advantage of our outdoor catering service.</li>
+                    </ul>
+                </div>
+                <div class=" mb-sm-3 pb-sm-4">
+                    <a href="https://damalhotel.com/damal-restaurant" class="btn_1 btn_scrollto outline_1">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 d-none d-md-block"></div>
+        <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <div class="title" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                <small>Local Amenities</small>
+                <h3>Events and Conferences</h3>              
+                <ul data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                    <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>High-speed Wi-Fi.</li>
+                    <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Digital screens for presentations.</li>
+                    <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Room for up to 700 guests.</li>
+                    <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Elegant decorations.</li>
+                    <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Clear public address system.</li>
+                    <li data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><i class="icon-spa-check_2"></i>Ample parking space.</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-6 order-first order-lg-2" style="padding:0 !important">
+            <div class="pinned-image pinned-image--medium">
+                <div class="pinned-image__container" style="translate: none; rotate: none; scale: none; transform: scale(1.05, 1.05);">
+                    <img src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/hall.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="bg-white">
+<div id="faq" class="container">
+  <div class="row justify-content-between margin_120_95">
+    <div class="col-lg-5">
+      <div class="title">
+        <small>Damal Hotel Faq</small>
+        <h3>Frequently Questions</h3>
+      </div>
+      <p>Can’t find your question in the list?
+        Let us know your questions.</p>
+      <p><a href="https://damalhotel.com/contact" class="animated_link"><strong>Contact Us <i class="bi bi-arrow-right"></i></strong></a></p>
+    </div>
+    <div class="col-lg-7">
+      <div role="tablist" class="mb-5 accordion" id="faq">
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h5 class="mb-0">
+              <a class="collapsed" data-bs-toggle="collapse" href="https://damalhotel.com/#collapseOne_product" aria-expanded="false">
+                <i class="indicator bi-plus-lg"></i>What is the checkout time?
+              </a>
+            </h5>
+          </div>
+          <div id="collapseOne_product" class="collapse" role="tabpanel" data-bs-parent="#faq">
+            <div class="card-body">
+              <p>Check out time is 12:00 noon, should you wish to extend your departure time or date, kindly contact our front desk/reception at least a day before your scheduled date or time of departure to verify room avaliability.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /card -->
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h5 class="mb-0">
+              <a class="collapsed" data-bs-toggle="collapse" href="https://damalhotel.com/#collapseTwo_product" aria-expanded="false">
+                <i class="indicator bi-plus-lg"></i>Worried about your valuable items like gold or jewelry?
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo_product" class="collapse" role="tabpanel" data-bs-parent="#faq">
+            <div class="card-body">
+              <p>Damal Hotel will not assume responsibility for any undeclared valuables like (Jewelry or Money) lost in the room. During check in you may deposit your valuables with the front desk/reception for their security.</p>
+            </div>
+          </div>
+        </div>
+       
+        <!-- /card -->
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h5 class="mb-0">
+              <a class="collapsed" data-bs-toggle="collapse" href="https://damalhotel.com/#collapseFour_product" aria-expanded="false">
+                <i class="indicator bi-plus-lg"></i>How should I behave during my stay?
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFour_product" class="collapse" role="tabpanel" data-bs-parent="#faq">
+            <div class="card-body">
+              <p>Loud conversation, Music, Tv and unnecessary noise in the guest rooms should be avoided so as not to disturb other guests.</p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /card -->
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h5 class="mb-0">
+              <a class="collapsed" data-bs-toggle="collapse" href="https://damalhotel.com/#collapseFfive_product" aria-expanded="false">
+                <i class="indicator bi-plus-lg"></i>What about Damage/loss of Hotel Property?
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFfive_product" class="collapse" role="tabpanel" data-bs-parent="#faq">
+            <div class="card-body">
+              <p>Any damage made to any property of the hotel either by the guest or your visitor, will be billed according to your guest folio.
+Any loss of hotel’s property like linens, towels, ashtrays, etc, will also be billed to the guest folio, Should you wish to acquire any of our items for souvenir purposes kindlly visit souvenir and boutique shop for better selecting.
+</p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /card -->
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h5 class="mb-0">
+              <a class="collapsed" data-bs-toggle="collapse" href="https://damalhotel.com/#collapsesix_product" aria-expanded="false">
+                <i class="indicator bi-plus-lg"></i>Shall I bring Pets or Alchool inside the hotel?
+              </a>
+            </h5>
+          </div>
+          <div id="collapsesix_product" class="collapse" role="tabpanel" data-bs-parent="#faq">
+            <div class="card-body">
+              <p>Animals or any kind of animals are not allowed in the hotel rooms. <br>No Alcoholic drink is being served in any of our bars, coffee shops and restaurants. like wise, we STRICTLY don’t allow the taking and/or drinking of alcoholic drinks inside the rooms and/or within the hotel premises.</p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /card -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /Row -->
+
+<section class="content-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="newsletter-box newsletter" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+          <h6>STORIES DELIVERED STRAIGHT</h6>
+          <h2>Get News and Updates to Your Inbox</h2>
+          <form id="form_newsletter_footer" class="form-newsletter rounded-img">
+            <input name="email" class="rounded-img newsletter-input" maxlength="199" type="email" placeholder="Enter Your Email Address....">
+            <button type="submit" name="submit" value="form" class="btn_1 rounded-img">Subscribe</button>
+            <input type="text" name="url">
+            <div id="form_newsletter_response"></div>
+          </form>
+          <small>Will be used in accordance with our <a href="https://damalhotel.com/#">Privacy Policy</a></small>
+        </div>
+        <!-- end newsletter-box -->
+      </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section><script type="application/ld+json">[{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://damalhotel.com",
+"logo": {"@type": "ImageObject","width": 190,"height": 60,"url": "https://damalhotel.com/uploads/logo/logo_65005f1dc22301-04994794-47101723.png"}},
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://damalhotel.com",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://damalhotel.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}]
+</script>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Homepage Section Four",
+    "item": "https://damalhotel.com/homepage-section-four"
+    }]
+}
+</script>
+<div class="container margin_120_95" id="booking_section">
+  <div class="row justify-content-between">
+    <div class="col-xl-4">
+      <div data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+        <div class="title">
+          <small>Damal Hotel</small>
+          <h2>Book Your Room Now</h2>
+        </div>
+        <p>Experience comfort and convenience at Damal Hotel. Book your room now and step into a world of exceptional hospitality.</p>
+        <div class="phone_element no_borders"><a href="tel://423424234"><i class="bi bi-telephone"></i><span><em>Info and bookings</em>+252 65 339 9000</span></a></div>
+      </div>
+    </div>
+    <div class="col-xl-7">
+      <div data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+
+                <p id="booking_response" class="mt-2"></p>
+        <form class="needs-validation ignore-form" id="bookingform" autocomplete="off" novalidate="novalidate">
+
+          <div class="booking_wrapper pb-3">
+            <p id="daterangepicker-result" class="d-none"></p>
+            <input type="hidden" id="date_booking" name="date_booking" autocomplete="off" style="">
+            <div id="daterangepicker-embedded-container" class="embedded-daterangepicker clearfix mb-4"><div class="daterangepicker ltr auto-apply show-calendar opensright" style="top: -4157.8px; left: -599.5px; right: auto; display: block;"><div class="ranges"></div><div class="drp-calendar left"><div class="calendar-table"><table class="table-condensed"><thead><tr><th class="prev available"><span></span></th><th colspan="5" class="month">Oct 2024</th><th></th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead><tbody><tr><td class="weekend off ends available" data-title="r0c0">29</td><td class="off ends available" data-title="r0c1">30</td><td class="available" data-title="r0c2">1</td><td class="available" data-title="r0c3">2</td><td class="available" data-title="r0c4">3</td><td class="available" data-title="r0c5">4</td><td class="weekend available" data-title="r0c6">5</td></tr><tr><td class="today weekend active start-date active end-date available" data-title="r1c0">6</td><td class="available" data-title="r1c1">7</td><td class="available" data-title="r1c2">8</td><td class="available" data-title="r1c3">9</td><td class="available" data-title="r1c4">10</td><td class="available" data-title="r1c5">11</td><td class="weekend available" data-title="r1c6">12</td></tr><tr><td class="weekend available" data-title="r2c0">13</td><td class="available" data-title="r2c1">14</td><td class="available" data-title="r2c2">15</td><td class="available" data-title="r2c3">16</td><td class="available" data-title="r2c4">17</td><td class="available" data-title="r2c5">18</td><td class="weekend available" data-title="r2c6">19</td></tr><tr><td class="weekend available" data-title="r3c0">20</td><td class="available" data-title="r3c1">21</td><td class="available" data-title="r3c2">22</td><td class="available" data-title="r3c3">23</td><td class="available" data-title="r3c4">24</td><td class="available" data-title="r3c5">25</td><td class="weekend available" data-title="r3c6">26</td></tr><tr><td class="weekend available" data-title="r4c0">27</td><td class="available" data-title="r4c1">28</td><td class="available" data-title="r4c2">29</td><td class="available" data-title="r4c3">30</td><td class="available" data-title="r4c4">31</td><td class="off ends available" data-title="r4c5">1</td><td class="weekend off ends available" data-title="r4c6">2</td></tr><tr><td class="weekend off ends available" data-title="r5c0">3</td><td class="off ends available" data-title="r5c1">4</td><td class="off ends available" data-title="r5c2">5</td><td class="off ends available" data-title="r5c3">6</td><td class="off ends available" data-title="r5c4">7</td><td class="off ends available" data-title="r5c5">8</td><td class="weekend off ends available" data-title="r5c6">9</td></tr></tbody></table></div><div class="calendar-time" style="display: none;"></div></div><div class="drp-calendar right"><div class="calendar-table"><table class="table-condensed"><thead><tr><th></th><th colspan="5" class="month">Nov 2024</th><th class="next available"><span></span></th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead><tbody><tr><td class="weekend off ends available" data-title="r0c0">27</td><td class="off ends available" data-title="r0c1">28</td><td class="off ends available" data-title="r0c2">29</td><td class="off ends available" data-title="r0c3">30</td><td class="off ends available" data-title="r0c4">31</td><td class="available" data-title="r0c5">1</td><td class="weekend available" data-title="r0c6">2</td></tr><tr><td class="weekend available" data-title="r1c0">3</td><td class="available" data-title="r1c1">4</td><td class="available" data-title="r1c2">5</td><td class="available" data-title="r1c3">6</td><td class="available" data-title="r1c4">7</td><td class="available" data-title="r1c5">8</td><td class="weekend available" data-title="r1c6">9</td></tr><tr><td class="weekend available" data-title="r2c0">10</td><td class="available" data-title="r2c1">11</td><td class="available" data-title="r2c2">12</td><td class="available" data-title="r2c3">13</td><td class="available" data-title="r2c4">14</td><td class="available" data-title="r2c5">15</td><td class="weekend available" data-title="r2c6">16</td></tr><tr><td class="weekend available" data-title="r3c0">17</td><td class="available" data-title="r3c1">18</td><td class="available" data-title="r3c2">19</td><td class="available" data-title="r3c3">20</td><td class="available" data-title="r3c4">21</td><td class="available" data-title="r3c5">22</td><td class="weekend available" data-title="r3c6">23</td></tr><tr><td class="weekend available" data-title="r4c0">24</td><td class="available" data-title="r4c1">25</td><td class="available" data-title="r4c2">26</td><td class="available" data-title="r4c3">27</td><td class="available" data-title="r4c4">28</td><td class="available" data-title="r4c5">29</td><td class="weekend available" data-title="r4c6">30</td></tr><tr><td class="weekend off ends available" data-title="r5c0">1</td><td class="off ends available" data-title="r5c1">2</td><td class="off ends available" data-title="r5c2">3</td><td class="off ends available" data-title="r5c3">4</td><td class="off ends available" data-title="r5c4">5</td><td class="off ends available" data-title="r5c5">6</td><td class="weekend off ends available" data-title="r5c6">7</td></tr></tbody></table></div><div class="calendar-time" style="display: none;"></div></div><div class="drp-buttons"><span class="drp-selected">10/06/2024 - 10/06/2024</span><button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" type="button">Apply</button> </div></div></div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="custom_select">
+                  <select class="wide custom_select-ignore" name="room_types" id="room_types" style="display: none;">
+                    <option value="">Select Room</option>
+                    <option value="deluxe_room">Deluxe Room</option>
+                    <option value="super_deluxe_room">Super Deluxe Room</option>
+                    <option value="vip_room">VIP Room</option>
+                    <option value="family_room">Family Room</option>
+                  </select><div class="nice-select wide custom_select-ignore" tabindex="0"><span class="current">Select Room</span><ul class="list"><li data-value="" class="option selected">Select Room</li><li data-value="deluxe_room" class="option">Deluxe Room</li><li data-value="super_deluxe_room" class="option">Super Deluxe Room</li><li data-value="vip_room" class="option">VIP Room</li><li data-value="family_room" class="option">Family Room</li></ul></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="qty-buttons version_2">
+                      <input type="button" value="0" class="qtyplus" name="adults_booking" aria-invalid="false">
+                      <input type="text" name="adults_booking" id="adults_booking" value="" class="qty form-control" placeholder="Adults">
+                      <input type="button" value="0" class="qtyminus" name="adults_booking" aria-invalid="false">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="qty-buttons version_2">
+                      <input type="button" value="+" class="qtyplus" name="childs_booking">
+                      <input type="text" name="childs_booking" id="childs_booking" value="" class="qty form-control" placeholder="Childs">
+                      <input type="button" value="-" class="qtyminus" name="childs_booking">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / row -->
+            <div class="row">
+              <div class="col-lg-6">
+                <div>
+                  <input type="text" name="name_booking" id="name_booking" class="form-control" placeholder="Name and Last Name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div>
+                  <input type="email" name="email_booking" id="email_booking" class="form-control" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <!-- / row -->
+            <div class="row mt-3">
+              <div class="col-lg-12">
+                <div>
+                  <textarea name="notes_booking" id="notes_booking" class="form-control" placeholder="Notes"></textarea>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <!-- / booking_wrapper -->
+          <div class="text-right mb-3">
+            <script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/api.js.download"></script><div class="g-recaptcha" data-sitekey="6LdXaI0pAAAAAIfc61IbNieUrEsNm2E1j7ilxE7c"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-d2ps41jfxlbl" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/saved_resource.html"></iframe></div>          </div>
+          <p class="mt-3"><button type="submit" class="submit-booking btn_1" id="submit-booking">Book Now </button></p>
+        </form>
+      </div>
+      <!-- /data cue -->
+    </div>
+    <!-- /col -->
+  </div>
+  <!-- /row -->
+</div>
+<!-- /container -->
+
+<footer class=" footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+        <h6 class="widget-title">Impressive The Damal Hotel</h6>
+        <p>Both refined and inventive The Damal Hotel in Hargeisa Somaliland combines historic legacy with contemporary luxury at the city’s most desirable location.</p>
+      </div>
+      <!-- end col-4 -->
+      <div class="col-xl-3 col-lg-1"> </div>
+      <!-- end col-3 -->
+      <div class="col-xl-3 col-lg-3" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;">
+        <h6 class="widget-title">Contact</h6>
+        <p> </p><p>reservations@damalhotel.com +252 65 339 9000</p><br>
+        <p></p>
+      </div>
+      <!-- end col-3 -->
+      <div class="col-xl-2 col-lg-4" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 360ms; animation-direction: normal; animation-fill-mode: both;">
+        <h6 class="widget-title">Location</h6>
+        <a href="https://www.google.com/maps?q=9.561777,%2044.064763" target="_blank">Discover On Map</a>
+
+      </div>
+      <!-- end col-2 -->
+      <div class="col-12" data-cue="slideInUp" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+        <div class="bottom-bar"> <span>Copyright 2024 Damal Hotel - All Rights Reserved.</span>
+          <ul class="footer-social">
+                <li><a class="rss" href="https://damalhotel.com/rss-feeds" aria-label="rss"><i class="icon-rss"></i></a></li>
+          </ul>
+          <div class="col-sm-12 col-md-6">
+                        <div class="nav-footer text-end">
+                            <ul>
+                                                                            <li><a href="https://damalhotel.com/hotel-rules-regulations">Hotel Rules &amp; Regulations </a></li>
+                                                                    </ul>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="progress-wrap">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" style="visibility: visible;">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+  </svg>
+</div>
+<a href="https://damalhotel.com/#" class="scrollup" style="display: none;"><i class="icon-arrow-up"></i></a>
+
+<script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/common_scripts.js.download"></script>
+<script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/script-v2.js.download"></script>
+<script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/slider.js.download"></script>
+<script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/datepicker_inline.js.download"></script>
+<script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/jquery.validate.min.js.download"></script>
+<script src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/main.js.download"></script>
+
+<!-- <script>
+    $(function() {
+        "use strict";
+        $(window).on('load', function() {
+            var $container = $('.isotope-wrapper');
+            $container.isotope({ itemSelector: '.item', layoutMode: 'masonry', });
+        });
+    });
+</script>  -->
+
+
+<script>
+  $("form[method='post']").append("<input type='hidden' name='sys_lang_id' autocomplete='off' value='1'>");
+</script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="./Damal Hotel Hargeisa - Your Gateway to Comfort and Exquisite Hospitality_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q7Q1GCWC41');
+</script>
+
+
+
+</body>
+</html>
