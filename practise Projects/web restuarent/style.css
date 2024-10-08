@@ -63,6 +63,11 @@ header h1{
   align-items: center;
   text-align: center;
 }
+.Home-page img{
+  position: relative;
+  width: 550px;
+  
+}
 .Home-page h2{
   font-size: 20px;
   margin-left: 30px;
