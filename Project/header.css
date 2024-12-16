@@ -36,19 +36,21 @@
 .middle-side{
   height: 45px;
   display: flex;
-  flex: 1fr;
   cursor: pointer;
 }
 
 .placeholder{
-  width: 380px;
+  flex: 1fr;
+  width: 300px;
+  min-width: 0;
   height: 35px;
   font-size: 18px;
   border:  1px solid  rgb(210, 210, 210);
   padding-left: 10px;
   display: flex;
-  flex: 1fr;
+  box-shadow: inset 0 1px 2px rgb(204, 204, 204);
 }
+
 button img{
   align-items: center;
   height: 26px;
@@ -64,6 +66,32 @@ button img{
   border: 1px solid  rgb(210, 210, 210);
   margin-right:7px;
 }
+.tooltip{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.search-tip{
+  background-color: rgb(117, 114, 114);
+  position: absolute;
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3px;
+  color: white;
+  padding: 2px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+  bottom: -15px;
+
+
+}
+.search-tip:hover{
+  opacity: 1;
+}
 
 .btn2{
   width: 40px;
@@ -72,6 +100,26 @@ button img{
   background-color:  rgb(245, 245, 245);
   border-radius: 20px;
   border: none;
+}
+
+
+.voice-search{
+  background-color: rgb(117, 114, 114);
+  position: absolute;
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3px;
+  width: 120px;
+  color: white;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+}
+.voice-search:hover{
+  opacity: 1;
 }
 .right-side{
   width: 185px;
@@ -89,6 +137,64 @@ button img{
 }
 .notification-icon{
   position: relative;
+}
+.create-tip{
+  position: absolute;
+  bottom: -15px;
+  background-color: rgb(117, 114, 114);
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3px;
+  color: white;
+  padding: 2px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+
+}
+
+.create-tip:hover{
+  opacity: 1;
+}
+
+.youtube-tip{
+  background-color: rgb(117, 114, 114);
+  position: absolute;
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3px;
+  color: white;
+  padding: 2px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+}
+
+.youtube-tip:hover{
+  opacity: 1;
+}
+
+.notification-tip{
+  position: absolute;
+  background-color: rgb(117, 114, 114);
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3px;
+  color: white;
+  padding: 2px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+}
+
+.notification-tip:hover{
+  opacity: 1;
 }
 
 .noti-count{

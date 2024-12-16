@@ -5,7 +5,7 @@ p{
   position: absolute;
   top: 90px;
   left: 90px;
-  bottom: 0;
+  bottom: -2000px;
   right: 0;
 
 }
@@ -13,7 +13,7 @@ p{
 .one{
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 290px;
   height: 260px;
   margin-right: 10px;
   margin-bottom: 15px;
@@ -21,6 +21,7 @@ p{
 .thumbnail{
   position: relative;
   width: 300px;
+  cursor: pointer;
 }
 .time{
   position: absolute;
@@ -46,6 +47,7 @@ position: relative;
   border-radius: 25px;
   margin-top: 5px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .text{
@@ -55,6 +57,7 @@ position: relative;
   width: 250px;
   margin-top: 5px;
   font-family: tahoma;
+  cursor: pointer;
 }
 
 .title{
