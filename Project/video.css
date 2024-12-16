@@ -1,0 +1,82 @@
+p{
+  font-family: tahoma;
+}
+.general{
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  bottom: 0;
+  right: 0;
+
+}
+
+.one{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 260px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.thumbnail{
+  position: relative;
+  width: 300px;
+}
+.time{
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding-top: 3px;
+  text-align: center;
+  border-radius: 4px;
+}
+.cover{
+position: relative;
+}
+.profile{
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  padding: 0;
+  border-radius: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.text{
+  position: absolute;
+  left: 50px;
+  display: inline-block;
+  width: 250px;
+  margin-top: 5px;
+  font-family: tahoma;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  margin-bottom: 2px;
+}
+
+.author{
+  font-weight: 700px;
+  font-size: 14px;
+  color: grey;
+  margin-top: 10px;
+}
+
+.status{
+  font-weight: 700px;
+  font-size: 14px;
+  color: grey;
+  margin-top: 4px;
+}
+
+
+

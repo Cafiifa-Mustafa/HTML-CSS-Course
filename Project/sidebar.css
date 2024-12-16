@@ -1,0 +1,40 @@
+.sidebar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 65px;
+  width: 70px;
+  background-color: white;
+  z-index: 100;
+}
+
+p{
+  font-family: tahoma;
+  font-size: 10px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.home, .explore, .youtube-music, .originals, .subscriptions, .library {
+  width: 70px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.home:hover, .explore:hover, .youtube-music:hover, .originals:hover, .subscriptions:hover, .library:hover{
+  background-color: rgb(240, 240, 240);
+  transition: 0.15s;
+  opacity: 0.8;
+
+}
+
+.home-icon, .explore-icon, .music-icon, .originals-icon, .sub-icon, .library-icon{
+  height: 20px;
+  padding-top: 8px;
+
+}
+
