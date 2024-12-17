@@ -1,6 +1,5 @@
 .thumbnails{
   width: 300px;
-  /*
   height: 300px;
   object-fit: contain;
   object-position: right;
@@ -9,7 +8,6 @@
   border-style: solid;
   border-width: 2px;
   border-color: red;
-  */
 }
 .search{
 display: block;
